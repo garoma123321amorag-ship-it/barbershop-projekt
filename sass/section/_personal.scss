@@ -1,0 +1,104 @@
+.personal {
+    padding-top: 84px;
+    padding-bottom: 84px;
+background-color: #f7f7f7;
+
+
+
+    &__subtitle {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #303030;
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 1px;
+            background: #303030;
+        }
+    }
+
+    &__title {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 42px;
+        letter-spacing: 0.05em;
+        color: #303030;
+        margin-bottom: 44px;
+
+
+    }
+    &__list{
+        flex-direction: column;
+        display: flex;
+        gap: 64px;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+
+ 
+
+    &__name {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #303030;
+        margin-bottom: 8px;
+        margin-top: 30px;
+    }
+
+    &__work {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #ff6c00;
+        margin-bottom: 30px;
+
+    }
+
+    &__items {
+
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &__link {
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover{
+            .personal__icon{
+                fill:#ff6c00;
+            }
+        }
+
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: #303030;
+        transition-property: fill;
+        transition-duration: 425ms;
+    }
+    
+}
