@@ -1,0 +1,71 @@
+.contacts {
+    background-image: url("../images/contact-back.png");
+    padding-top: 84px;
+    padding-bottom: 84px;
+    background-color: #191C26;
+
+    &__title {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 42px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #fff;
+        width: 400px;
+    }
+
+    &__adress {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 167%;
+        letter-spacing: 0.02em;
+        color: #9da4bd;
+        margin-top: 40px;
+    }
+
+    &__text {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 167%;
+        letter-spacing: 0.02em;
+        color: #9da4bd;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 20px;
+
+    }
+
+    &__pretext {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-top: 44px;
+        display: flex;
+        align-items: center;
+        
+        gap: 20px;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 1px;
+            background: rgba(157, 164, 189, 0.6);
+        }
+    }
+
+    &__icon {
+        height: 24px;
+        width: 24px;
+        fill: #9DA4BD;
+    }
+
+
+
+
+}

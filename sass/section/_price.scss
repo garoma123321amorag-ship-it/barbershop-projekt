@@ -1,7 +1,7 @@
 .price {
     padding-top: 84px;
     padding-bottom: 84px;
-     background: #191c26;
+    background: #191c26;
 
 
 
@@ -14,14 +14,46 @@
         color: #fff;
         margin-bottom: 44px;
     }
-    &__input{
+
+    &__input {
         display: block;
         width: 100%;
         background-color: transparent;
         border: none;
         border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-        margin-bottom:44px;
-        
+        margin-bottom: 44px;
+        padding-bottom: 8px;
+
     }
+
+    &__inputs {
+        display: block;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+        padding-bottom: 60px;
+        margin-bottom: 44px;
+    }
+
+    &__btn {
+        border: 1px solid #ff6c00;
+        border-radius: 25px;
+        width: 160px;
+        height: 40px;
+        background: transparent;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 0.09em;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        display: block;
+        margin: 0 auto;
+
+    }
+
+
 
 }
