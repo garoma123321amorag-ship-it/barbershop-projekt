@@ -6,10 +6,73 @@
     background-position: center;
     background-size: cover;
 
+    @media (min-width: 720px) {
+        padding-bottom: 40px;
+        background-image: none;
+    }
+
+    & .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        padding-right: 0;
+
+        @media (min-width: 720px) {
+            background-image: url("../images/mobile-background.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            grid-template-columns: 110px 1fr;
+        }
+    }
+
+    &__aside {
+        display: none;
+
+        @media (min-width: 720px) {
+            display: flex;
+            background-color: #fff;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    &__medias {
+        display: flex;
+        transform: rotate(-90deg);
+        gap: 40px;
+        margin-bottom: 100px;
+
+
+    }
+
+    &__media {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 11px;
+        letter-spacing: 0.2em;
+        color: #303030;
+    }
+    &__all{
+        flex-basis: 100%;
+    }
+
     &__wraper {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        width: 100%;
+    }
 
+    &__logo {
+        @media (min-width: 720px) {
+            display: none;
+        }
+    }
+
+    &__logotype {
+        width: 69px;
+        height: 56px;
+        margin: 0 auto;
     }
 
 
@@ -25,6 +88,71 @@
         justify-content: center;
         align-items: center;
 
+
+
+        @media (min-width: 720px) {
+            display: none;
+        }
+
+    }
+
+    &__list {
+        display: none;
+
+
+        @media (min-width: 720px) {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+    }
+
+
+    &__link {
+        transition: all 0.3s;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        color: #fff;
+
+        &:hover {
+            color: #ff6c00;
+        }
+    }
+
+    &__items {
+        display: none;
+
+        @media (min-width: 720px) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: end;
+        }
+    }
+
+    &__contact {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: #fff;
+        background: none;
+
+
+    }
+
+    &__elem:first-child {
+
+        .header__contact {
+            border: 1px solid #ff6c00;
+            border-radius: 25px;
+            width: 160px;
+            height: 40px;
+            padding: 12px 20px;
+        }
     }
 
     &__menu {
@@ -70,6 +198,60 @@
         color: #9da4bd;
         width: 336px;
     }
+
+    &__box {
+        display: none;
+
+        @media (min-width: 720px) {
+            display: flex;
+            gap: 27px;
+            margin-top: 173px;
+            margin-left: auto;
+            justify-content: end;
+            margin-bottom: 40px;
+            margin-right: 10px;
+        }
+
+
+    }
+
+    &__social:first-child {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        color: rgba(157, 164, 189, 0.6);
+
+        &::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 1px;
+            background: rgba(157, 164, 189, 0.6);
+            margin-top: 8px;
+
+        }
+    }
+
+    &__social:last-child {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        color: #fff;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 1px;
+            background: #fff;
+            margin-top: 8px;
+
+        }
+    }
+
+
 
 
 

@@ -20,17 +20,39 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__wraper">
-                <a class="header__logo" href=""><img class="header__icon" src="./images/logo.svg" alt="logo"></a>
-                <button class="header__btn" type="button"><svg class="header__menu">
-                        <use href="./images/symbol-defs.svg#icon-menu"></use>
-                    </svg></button>
+            <aside class="header__aside">
+                <a href="./index.html"><img class="header__logotype" src="./images/Logo_var.svg" alt=""></a>
+                <div class="header__medias">
+                    <a href="" class="header__media">Youtube</a>
+                    <a href="" class="header__media">Instagram</a>
+                </div>
+            </aside>
+            <div class="header__all">
+                <div class="header__wraper">
+                    <a class="header__logo" href=""><img class="header__icon" src="./images/logo.svg" alt="logo"></a>
+                    <button class="header__btn" type="button"><svg class="header__menu">
+                            <use href="./images/symbol-defs.svg#icon-menu"></use>
+                        </svg></button>
+                    <ul class="header__list">
+                        <li class="header__item"><a href="#" class="header__link">About</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Services and prices</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Barbers</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Contacts</a></li>
+                    </ul>
+                    <ul class="header__items">
+                        <li class="header__elem"><a href="#" class="header__contact">Online-booking</a></li>
+                        <li class="header__elem"><a href="#" class="header__contact">+38 044 111 11 11</a></li>
+                    </ul>
+                </div>
+                <p class="header__subtitle">A hair salon for men in Kyiv</p>
+                <h1 class="header__title">BarberShop</h1>
+                <p class="header__text">We are experts in trendy men’s haircuts.
+                    We work quickly, carefully and with style.</p>
+                <div class="header__box">
+                    <a href="" class="header__social">Atras</a>
+                    <a href="" class="header__social">Siguiente</a>
+                </div>
             </div>
-            <p class="header__subtitle">A hair salon for men in Kyiv</p>
-            <h1 class="header__title">BarberShop</h1>
-            <p class="header__text">We are experts in trendy men’s haircuts.
-                We work quickly, carefully and with style.</p>
-
         </div>
     </header>
     <main>
@@ -44,6 +66,7 @@
                     into the hands of our master, you will never be the same again. We are a team that is always "on the
                     same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
                 <button class="about__btn">online-booking</button>
+
             </div>
         </section>
         <section class="booking">
@@ -292,7 +315,7 @@
                 <li class="footer__item"><a class="footer__media" href="">Instagram</a></li>
                 <li class="footer__item"><a class="footer__media" href="">Youtube</a></li>
             </ul>
-           
+
         </div>
     </footer>
     <script type="module" src="./js/menu.js"></script>
