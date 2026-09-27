@@ -9,6 +9,7 @@
     @media (min-width: 720px) {
         padding-bottom: 40px;
         background-image: none;
+        padding-top: 0px;
     }
 
     & .container {
@@ -66,6 +67,7 @@
     &__logo {
         @media (min-width: 720px) {
             display: none;
+           
         }
     }
 
@@ -73,6 +75,7 @@
         width: 69px;
         height: 56px;
         margin: 0 auto;
+        margin-top: 40px;
     }
 
 
@@ -104,6 +107,7 @@
             display: flex;
             align-items: center;
             gap: 16px;
+            margin-top: 40px;
         }
     }
 
@@ -129,6 +133,7 @@
             flex-direction: column;
             gap: 20px;
             align-items: end;
+            margin-top: 40px;
         }
     }
 
@@ -179,6 +184,10 @@
             height: 1px;
             background: rgba(157, 164, 189, 0.6);
         }
+
+                  @media (min-width: 720px) {
+                     margin-left: 120px;
+                  }
     }
 
     &__title {
@@ -187,6 +196,10 @@
         font-size: 48px;
         letter-spacing: 0.05em;
         color: #fff;
+
+            @media (min-width: 720px) {
+                    margin-left: 120px;
+                }
     }
 
     &__text {
@@ -197,6 +210,10 @@
         letter-spacing: 0.02em;
         color: #9da4bd;
         width: 336px;
+
+            @media (min-width: 720px) {
+                    margin-left: 120px;
+                }
     }
 
     &__box {

@@ -2,6 +2,14 @@
     padding-top: 84px;
     padding-bottom: 84px;
 
+
+    & .container {
+        @media (min-width: 720px) {
+            display: flex;
+            gap: 30px;
+        }
+    }
+
     &__main {
         font-weight: 600;
         font-size: 11px;
@@ -23,6 +31,32 @@
 
     }
 
+    &__list {
+        display: none;
+
+        @media (min-width: 720px) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+
+    }
+
+&__box{
+ 
+        @media (min-width: 720px) {
+                   width: 330px;
+            }
+}
+
+    &__img {
+        @media (min-width: 720px) {
+            width: 330px;
+            height: 235px;
+        }
+    }
+
     &__title {
         margin-top: 20px;
         font-weight: 700;
@@ -34,6 +68,8 @@
         @media (min-width: 448px) {
             width: 306px;
         }
+
+
     }
 
 
@@ -44,6 +80,11 @@
         line-height: 163%;
         letter-spacing: 0.02em;
         color: #555;
+
+        @media (min-width: 720px) {
+            font-size: 18px;
+            line-height: 167%;
+        }
     }
 
     &__text {
@@ -53,6 +94,10 @@
         line-height: 186%;
         letter-spacing: 0.02em;
         color: #555;
+
+        @media (min-width: 720px) {
+   
+        }
     }
 
     &__btn {

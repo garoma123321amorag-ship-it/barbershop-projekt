@@ -3,6 +3,11 @@
     padding-top: 44px;
     padding-bottom: 44px;
 
+    @media (min-width: 720px) {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
     &__text {
         font-family: "Open Sans", sans-serif;
         font-weight: 600;
@@ -10,6 +15,10 @@
         letter-spacing: 0.2em;
         color: #9da4bd;
         margin-top: 79px;
+
+        @media (min-width: 720px) {
+            margin-top: 0;
+        }
     }
 
     &__media {
@@ -24,7 +33,7 @@
         display: flex;
         gap: 40px;
         align-items: center;
-        
+
 
         &::before {
             content: "";
@@ -34,10 +43,11 @@
             background: #303030;
         }
     }
-    & .container{
+
+    & .container {
         display: flex;
         justify-content: space-between;
-        align-items: center     ;
+        align-items: center;
     }
 
 

@@ -1,7 +1,7 @@
 .personal {
     padding-top: 84px;
     padding-bottom: 84px;
-background-color: #f7f7f7;
+    background-color: #f7f7f7;
 
 
 
@@ -22,6 +22,12 @@ background-color: #f7f7f7;
             height: 1px;
             background: #303030;
         }
+
+        @media (min-width:720px) {
+            margin:0 auto;
+            margin-bottom: 20px;
+              width: 450px;
+        }
     }
 
     &__title {
@@ -32,12 +38,24 @@ background-color: #f7f7f7;
         color: #303030;
         margin-bottom: 44px;
 
+        @media (min-width:720px) {
+            margin: 0 auto;
+              width: 450px;
+              margin-bottom: 44px;
+        }
+
 
     }
-    &__list{
+
+    &__list {
         flex-direction: column;
         display: flex;
         gap: 64px;
+
+        @media (min-width:720px) {
+            width: 450px;
+            margin: auto;
+        }
     }
 
     &__item {
@@ -45,7 +63,7 @@ background-color: #f7f7f7;
     }
 
 
- 
+
 
     &__name {
         font-family: "Open Sans", sans-serif;
@@ -85,9 +103,9 @@ background-color: #f7f7f7;
         align-items: center;
         justify-content: center;
 
-        &:hover{
-            .personal__icon{
-                fill:#ff6c00;
+        &:hover {
+            .personal__icon {
+                fill: #ff6c00;
             }
         }
 
@@ -100,5 +118,5 @@ background-color: #f7f7f7;
         transition-property: fill;
         transition-duration: 425ms;
     }
-    
+
 }

@@ -58,14 +58,22 @@
     <main>
         <section class="about">
             <div class="container">
-                <p class="about__main">About</p>
-                <h3 class="about__title">Best Barbershop in your city</h3>
-                <p class="about__description">If you want to add more confidence to your image, you should visit us</p>
-                <p class="about__text">We are a team that never stops at what has been achieved and are thirsty for
-                    changes. And when you fall
-                    into the hands of our master, you will never be the same again. We are a team that is always "on the
-                    same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
-                <button class="about__btn">online-booking</button>
+                <ul class="about__list">
+                    <li class="about__item"><img src="./images/about-one.png" alt="#" class="about__img"></li>
+                    <li class="about__item"><img src="./images/about-two.png" alt="#" class="about__img"></li>
+                </ul>
+                <div class="about__box">
+                    <p class="about__main">About</p>
+                    <h3 class="about__title">Best Barbershop in your city</h3>
+                    <p class="about__description">If you want to add more confidence to your image, you should visit us
+                    </p>
+                    <p class="about__text">We are a team that never stops at what has been achieved and are thirsty for
+                        changes. And when you fall
+                        into the hands of our master, you will never be the same again. We are a team that is always "on
+                        the
+                        same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
+                    <button class="about__btn">online-booking</button>
+                </div>
 
             </div>
         </section>
@@ -116,6 +124,7 @@
                     </li>
                 </ul>
                 <button class="booking__btn">online-booking</button>
+                <button class="booking__btn-two">Reserva en línea</button>
             </div>
 
         </section>
@@ -283,8 +292,9 @@
         <section class="price">
             <div class="container">
                 <h2 class="price__title">Online-booking</h2>
-                <input placeholder="Name*" class="price__input" type="text">
-                <input placeholder="Phone*" class="price__input" type="text">
+                <div class="price__box"><input placeholder="Name*" class="price__input" type="text">
+                    <input placeholder="Phone*" class="price__input" type="text">
+                </div>
                 <textarea placeholder="Message" class="price__inputs" type="text"></textarea>
                 <button class="price__btn">send </button>
             </div>
@@ -293,18 +303,25 @@
         <section class="contacts">
             <div class="container">
                 <h2 class="contacts__title">Contacts</h2>
-
-                <p class="contacts__adress"><svg class="contacts__icon">
-                        <use href="./images/symbol-defs.svg#icon-location"></use>
-                    </svg> st. Vasilkovaya, 7A Kiev, 08132</p>
-                <p class="contacts__text"><svg class="contacts__icon">
-                        <use href="./images/symbol-defs.svg#icon-phone"></use>
-                    </svg> +38 044 111 11 11</p>
-                <p class="contacts__text"><svg class="contacts__icon">
-                        <use href="./images/symbol-defs.svg#icon-mail2"></use>
-                    </svg>barbershop</p>
-                <p class="contacts__pretext">Working hours</p>
-                <p class="contacts__text">Every day from 9:00 to 22:00</p>
+<div class="contacts__box-all">
+                <div class="contacts__box">
+                    <p class="contacts__adress"><svg class="contacts__icon">
+                            <use href="./images/symbol-defs.svg#icon-location"></use>
+                        </svg> st. Vasilkovaya, 7A Kiev, 08132</p>
+                    <p class="contacts__text"><svg class="contacts__icon">
+                            <use href="./images/symbol-defs.svg#icon-phone"></use>
+                        </svg> +38 044 111 11 11</p>
+                    <p class="contacts__text"><svg class="contacts__icon">
+                            <use href="./images/symbol-defs.svg#icon-mail2"></use>
+                        </svg>barbershop@email.com</p>
+                        </div>
+               
+                
+                <div class="contacts__box-two">
+                    <p class="contacts__pretext">Working hours</p>
+                    <p class="contacts__text">Every day from 9:00 to 22:00</p>
+                </div>
+            </div>
             </div>
         </section>
     </main>

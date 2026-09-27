@@ -22,7 +22,25 @@
             background: rgba(157, 164, 189, 0.6);
         }
     }
-    &__img{
-       margin-bottom: 30px;
+
+    &__list {
+        @media (min-width: 720px) {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px;
+
+        }
+    }
+
+    &__img {
+        margin-bottom: 30px;
+
+        @media (min-width: 720px) {
+            width: 330px;
+            height: 360px;
+            display: flex;
+            margin-bottom: 0px;
+
+        }
     }
 }
