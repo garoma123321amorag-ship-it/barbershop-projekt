@@ -10,7 +10,10 @@
         padding-bottom: 40px;
         background-image: none;
         padding-top: 0px;
+
     }
+
+
 
     & .container {
         display: grid;
@@ -54,7 +57,8 @@
         letter-spacing: 0.2em;
         color: #303030;
     }
-    &__all{
+
+    &__all {
         flex-basis: 100%;
     }
 
@@ -67,7 +71,7 @@
     &__logo {
         @media (min-width: 720px) {
             display: none;
-           
+
         }
     }
 
@@ -109,6 +113,10 @@
             gap: 16px;
             margin-top: 40px;
         }
+
+        @media (min-width: 1200px) {
+            margin-left: 100px;
+        }
     }
 
 
@@ -134,6 +142,14 @@
             gap: 20px;
             align-items: end;
             margin-top: 40px;
+
+
+        }
+
+        @media (min-width: 1200px) {
+            flex-direction: row-reverse;
+            margin-left: auto;
+            margin-right: 10px;
         }
     }
 
@@ -185,9 +201,13 @@
             background: rgba(157, 164, 189, 0.6);
         }
 
-                  @media (min-width: 720px) {
-                     margin-left: 120px;
-                  }
+        @media (min-width: 720px) {
+            margin-left: 120px;
+        }
+
+        @media (min-width: 1200px) {
+            margin-left: 100px;
+        }
     }
 
     &__title {
@@ -197,10 +217,20 @@
         letter-spacing: 0.05em;
         color: #fff;
 
-            @media (min-width: 720px) {
-                    margin-left: 120px;
-                }
+        @media (min-width: 720px) {
+            margin-left: 120px;
+        }
+
+        @media (min-width: 1200px) {
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            font-size: 72px;
+            letter-spacing: 0.05em;
+            color: #fff;
+            margin-left: 100px;
+        }
     }
+
 
     &__text {
         margin-top: 20px;
@@ -211,9 +241,13 @@
         color: #9da4bd;
         width: 336px;
 
-            @media (min-width: 720px) {
-                    margin-left: 120px;
-                }
+        @media (min-width: 720px) {
+            margin-left: 120px;
+        }
+
+        @media (min-width: 1200px) {
+            margin-left: 100px;
+        }
     }
 
     &__box {
@@ -267,8 +301,6 @@
 
         }
     }
-
-
 
 
 

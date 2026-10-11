@@ -4,6 +4,8 @@
     background: #191c26;
 
 
+  
+
 
     &__title {
         font-family: "Raleway", sans-serif;
@@ -15,8 +17,8 @@
         margin-bottom: 44px;
 
         @media (min-width: 720px) {
-               text-align: left;
-            }
+            text-align: left;
+        }
     }
 
     &__input {
@@ -64,11 +66,29 @@
         margin: 0 auto;
 
         @media (min-width: 720px) {
-                margin: 0;
-            }
+            margin: 0;
+        }
 
     }
 
 
 
 }
+  .price__all-in-one {
+      @media (min-width: 1200px) {
+
+          & .cxontainer {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              background-color: #ff6c00;
+              width: 1200px;
+              margin:0 auto;
+          }
+
+          .price .container,
+          .contacts .container {
+              // background-color: #ff0000;
+              width: 50%;
+          }
+      }
+  }

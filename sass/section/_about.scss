@@ -2,6 +2,10 @@
     padding-top: 84px;
     padding-bottom: 84px;
 
+    @media (min-width: 1200px) {
+        padding-bottom: 120px;
+        padding-top: 120px;
+    }
 
     & .container {
         @media (min-width: 720px) {
@@ -40,20 +44,31 @@
             gap: 20px;
         }
 
+        @media (min-width: 1200px) {
+            flex-direction: row;
+        }
+
 
     }
 
-&__box{
- 
+    &__box {
+
         @media (min-width: 720px) {
-                   width: 330px;
-            }
-}
+            width: 330px;
+        }
+    }
 
     &__img {
         @media (min-width: 720px) {
             width: 330px;
             height: 235px;
+
+        }
+
+        @media (min-width: 1200px) {
+
+            width: 270px;
+            height: 445px;
         }
     }
 
@@ -67,6 +82,15 @@
 
         @media (min-width: 448px) {
             width: 306px;
+        }
+
+        @media (min-width: 1200px) {
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            font-size: 42px;
+            letter-spacing: 0.05em;
+            color: #303030;
+            width: 470px;
         }
 
 
@@ -85,6 +109,16 @@
             font-size: 18px;
             line-height: 167%;
         }
+
+        @media (min-width: 1200px) {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 167%;
+            letter-spacing: 0.02em;
+            color: #555;
+            width: 470px;
+        }
     }
 
     &__text {
@@ -95,9 +129,17 @@
         letter-spacing: 0.02em;
         color: #555;
 
-        @media (min-width: 720px) {
-   
+
+        @media (min-width: 1200px) {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 186%;
+            letter-spacing: 0.02em;
+            color: #555;
+            width: 470px;
         }
+
     }
 
     &__btn {

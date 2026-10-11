@@ -3,6 +3,17 @@
     padding-bottom: 119px;
 
 
+    @media (min-width: 1200px) {
+        padding-top: 129px;
+        padding-bottom: 120px;
+    }
+
+    & .container {
+        flex-direction: row-reverse;
+        display: flex;
+        gap: 130px;
+    }
+
     &__subtitle {
         font-weight: 600;
         font-size: 11px;
@@ -64,6 +75,10 @@
         @media (min-width:720px) {
             margin-left: auto;
             width: 450px;
+        }
+
+        @media (min-width:1200px) {
+            margin-top: 0;
         }
 
 

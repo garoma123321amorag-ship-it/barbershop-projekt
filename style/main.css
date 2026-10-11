@@ -150,6 +150,11 @@ body {
     margin-top: 40px;
   }
 }
+@media (min-width: 1200px) {
+  .header__list {
+    margin-left: 100px;
+  }
+}
 .header__link {
   transition: all 0.3s;
   font-family: "Open Sans", sans-serif;
@@ -171,6 +176,13 @@ body {
     gap: 20px;
     align-items: end;
     margin-top: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__items {
+    flex-direction: row-reverse;
+    margin-left: auto;
+    margin-right: 10px;
   }
 }
 .header__contact {
@@ -217,6 +229,11 @@ body {
     margin-left: 120px;
   }
 }
+@media (min-width: 1200px) {
+  .header__subtitle {
+    margin-left: 100px;
+  }
+}
 .header__title {
   margin-top: 20px;
   font-weight: 700;
@@ -227,6 +244,16 @@ body {
 @media (min-width: 720px) {
   .header__title {
     margin-left: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    letter-spacing: 0.05em;
+    color: #fff;
+    margin-left: 100px;
   }
 }
 .header__text {
@@ -241,6 +268,11 @@ body {
 @media (min-width: 720px) {
   .header__text {
     margin-left: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__text {
+    margin-left: 100px;
   }
 }
 .header__box {
@@ -292,6 +324,12 @@ body {
   padding-top: 84px;
   padding-bottom: 84px;
 }
+@media (min-width: 1200px) {
+  .about {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+}
 @media (min-width: 720px) {
   .about .container {
     display: flex;
@@ -324,6 +362,11 @@ body {
     gap: 20px;
   }
 }
+@media (min-width: 1200px) {
+  .about__list {
+    flex-direction: row;
+  }
+}
 @media (min-width: 720px) {
   .about__box {
     width: 330px;
@@ -333,6 +376,12 @@ body {
   .about__img {
     width: 330px;
     height: 235px;
+  }
+}
+@media (min-width: 1200px) {
+  .about__img {
+    width: 270px;
+    height: 445px;
   }
 }
 .about__title {
@@ -346,6 +395,16 @@ body {
 @media (min-width: 448px) {
   .about__title {
     width: 306px;
+  }
+}
+@media (min-width: 1200px) {
+  .about__title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: 0.05em;
+    color: #303030;
+    width: 470px;
   }
 }
 .about__description {
@@ -362,6 +421,17 @@ body {
     line-height: 167%;
   }
 }
+@media (min-width: 1200px) {
+  .about__description {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    letter-spacing: 0.02em;
+    color: #555;
+    width: 470px;
+  }
+}
 .about__text {
   margin-top: 20px;
   font-weight: 400;
@@ -369,6 +439,17 @@ body {
   line-height: 186%;
   letter-spacing: 0.02em;
   color: #555;
+}
+@media (min-width: 1200px) {
+  .about__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+    color: #555;
+    width: 470px;
+  }
 }
 .about__btn {
   margin-top: 52px;
@@ -448,9 +529,34 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  .price__all-in-one .cxontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #ff6c00;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .price__all-in-one .price .container,
+  .price__all-in-one .contacts .container {
+    width: 50%;
+  }
+}
+
 .why-us {
   padding-top: 84px;
   padding-bottom: 119px;
+}
+@media (min-width: 1200px) {
+  .why-us {
+    padding-top: 129px;
+    padding-bottom: 120px;
+  }
+}
+.why-us .container {
+  flex-direction: row-reverse;
+  display: flex;
+  gap: 130px;
 }
 .why-us__subtitle {
   font-weight: 600;
@@ -510,6 +616,11 @@ body {
   .why-us__list {
     margin-left: auto;
     width: 450px;
+  }
+}
+@media (min-width: 1200px) {
+  .why-us__list {
+    margin-top: 0;
   }
 }
 .why-us__item {
@@ -584,6 +695,12 @@ body {
     width: 450px;
   }
 }
+@media (min-width: 1200px) {
+  .personal__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
 .personal__title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -599,6 +716,17 @@ body {
     margin-bottom: 44px;
   }
 }
+@media (min-width: 1200px) {
+  .personal__title {
+    margin: 0;
+    margin-bottom: 44px;
+  }
+}
+@media (min-width: 1200px) {
+  .personal__img {
+    width: 100%;
+  }
+}
 .personal__list {
   flex-direction: column;
   display: flex;
@@ -608,6 +736,13 @@ body {
   .personal__list {
     width: 450px;
     margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .personal__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
   }
 }
 .personal__item {
@@ -661,6 +796,12 @@ body {
   padding-top: 84px;
   padding-bottom: 84px;
 }
+@media (min-width: 1200px) {
+  .latin {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
 .latin__subtitle {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -686,6 +827,11 @@ body {
     gap: 30px;
   }
 }
+@media (min-width: 720px) and (min-width: 1200px) {
+  .latin__list {
+    display: flex;
+  }
+}
 .latin__img {
   margin-bottom: 30px;
 }
@@ -703,6 +849,9 @@ body {
   padding-bottom: 84px;
   background-color: #111319;
   background-image: url("../images/booking-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media (min-width: 720px) {
   .booking {
@@ -737,6 +886,22 @@ body {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   padding: 30px 20px 30px 40px;
 }
+@media (min-width: 1200px) {
+  .booking__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background: none;
+  }
+}
+@media (min-width: 1200px) {
+  .booking__elem {
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    padding: 20px 30px;
+    width: 570px;
+  }
+}
 .booking__item {
   display: flex;
   align-items: baseline;
@@ -748,6 +913,11 @@ body {
   flex-grow: 1;
   height: 1px;
   background-color: rgba(157, 164, 189, 0.12);
+}
+@media (min-width: 1200px) {
+  .booking__item {
+    background: none;
+  }
 }
 .booking__text {
   font-weight: 400;
@@ -814,6 +984,11 @@ body {
 .contacts__box-all {
   display: flex;
   gap: 30px;
+}
+@media (min-width: 1200px) {
+  .contacts__box-all {
+    flex-direction: column;
+  }
 }
 .contacts__title {
   font-family: "Raleway", sans-serif;
