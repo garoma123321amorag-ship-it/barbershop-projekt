@@ -30,7 +30,7 @@
             <div class="header__all">
                 <div class="header__wraper">
                     <a class="header__logo" href=""><img class="header__icon" src="./images/logo.svg" alt="logo"></a>
-                    <button class="header__btn" type="button"><svg class="header__menu">
+                    <button class="header__btn" data-modal-open type="button"><svg class="header__menu">
                             <use href="./images/symbol-defs.svg#icon-menu"></use>
                         </svg></button>
 
@@ -60,7 +60,19 @@
         <section class="about">
             <div class="container">
                 <ul class="about__list">
-                    <li class="about__item"><img src="./images/about-one.png" alt="#" class="about__img"></li>
+                    <li class="about__item">
+                        <picture>
+                            <source
+                                srcset="./images/desktop/about1-desktop@1x.webp 1x, ./images/desktop/about2-desktop@2x.webp 2x "
+                                media="(min-width:1200px)">
+
+                            <source
+                                srcset="./images/tablet/about1-tablet@1x.webp 1x, ./images/tablet/about2-tablet@2x.webp 2x "
+                                media="(min-width:720px)">
+
+                            <img src="./images/about-one.png" alt="#" class="about__img">
+                        </picture>
+                    </li>
                     <li class="about__item"><img src="./images/about-two.png" alt="#" class="about__img"></li>
                 </ul>
                 <div class="about__box">
@@ -103,7 +115,7 @@
                             </li>
                         </ul>
                     </li>
-                    
+
                     <li class="booking__elem">
                         <ul class="booking__items">
                             <li class="booking__item">
@@ -136,11 +148,12 @@
 
             <div class="container">
                 <div class="why-us__first">
-                <p class="why-us__subtitle">Old traditional school</p>
-                <h1 class="why-us__title">¿Why people come to us?</h1>
-                <p class="why-us__prelist">Only good things are said about us. But it's better to see and feel 1 time
-                    than read 10 times.</p>
-                    </div>
+                    <p class="why-us__subtitle">Old traditional school</p>
+                    <h1 class="why-us__title">¿Why people come to us?</h1>
+                    <p class="why-us__prelist">Only good things are said about us. But it's better to see and feel 1
+                        time
+                        than read 10 times.</p>
+                </div>
                 <ul class="why-us__list">
                     <li class="why-us__item">
                         <h4 class="why-us__number">600
@@ -295,42 +308,42 @@
         </section>
         <div class="price__all-in-one">
             <div class="cxontainer">
-        <section class="price">
-            <div class="container">
-                <h2 class="price__title">Online-booking</h2>
-                <div class="price__box"><input placeholder="Name*" class="price__input" type="text">
-                    <input placeholder="Phone*" class="price__input" type="text">
-                </div>
-                <textarea placeholder="Message" class="price__inputs" type="text"></textarea>
-                <button class="price__btn">send </button>
-            </div>
-
-        </section>
-        <section class="contacts">
-            <div class="container">
-                <h2 class="contacts__title">Contacts</h2>
-                <div class="contacts__box-all">
-                    <div class="contacts__box">
-                        <p class="contacts__adress"><svg class="contacts__icon">
-                                <use href="./images/symbol-defs.svg#icon-location"></use>
-                            </svg> st. Vasilkovaya, 7A Kiev, 08132</p>
-                        <p class="contacts__text"><svg class="contacts__icon">
-                                <use href="./images/symbol-defs.svg#icon-phone"></use>
-                            </svg> +38 044 111 11 11</p>
-                        <p class="contacts__text"><svg class="contacts__icon">
-                                <use href="./images/symbol-defs.svg#icon-mail2"></use>
-                            </svg>barbershop@email.com</p>
+                <section class="price">
+                    <div class="container">
+                        <h2 class="price__title">Online-booking</h2>
+                        <div class="price__box"><input placeholder="Name*" class="price__input" type="text">
+                            <input placeholder="Phone*" class="price__input" type="text">
+                        </div>
+                        <textarea placeholder="Message" class="price__inputs" type="text"></textarea>
+                        <button class="price__btn">send </button>
                     </div>
 
+                </section>
+                <section class="contacts">
+                    <div class="container">
+                        <h2 class="contacts__title">Contacts</h2>
+                        <div class="contacts__box-all">
+                            <div class="contacts__box">
+                                <p class="contacts__adress"><svg class="contacts__icon">
+                                        <use href="./images/symbol-defs.svg#icon-location"></use>
+                                    </svg> st. Vasilkovaya, 7A Kiev, 08132</p>
+                                <p class="contacts__text"><svg class="contacts__icon">
+                                        <use href="./images/symbol-defs.svg#icon-phone"></use>
+                                    </svg> +38 044 111 11 11</p>
+                                <p class="contacts__text"><svg class="contacts__icon">
+                                        <use href="./images/symbol-defs.svg#icon-mail2"></use>
+                                    </svg>barbershop@email.com</p>
+                            </div>
 
-                    <div class="contacts__box-two">
-                        <p class="contacts__pretext">Working hours</p>
-                        <p class="contacts__text">Every day from 9:00 to 22:00</p>
+
+                            <div class="contacts__box-two">
+                                <p class="contacts__pretext">Working hours</p>
+                                <p class="contacts__text">Every day from 9:00 to 22:00</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
             </div>
-        </section>
-        </div>
         </div>
     </main>
     <footer class="footer">
@@ -343,7 +356,33 @@
 
         </div>
     </footer>
+    <div data-modal class="backdrop  is-hidden">
+        <div class="mobile">
+            <button class="mobile__btn" data-modal-close type="button"> <svg class="mobile__close">
+                    <use href="./images/symbol-defs.svg#icon-cross"></use>
+                </svg></button>
+            <ul class="mobile__list">
+                <li class="mobile__item"><a href="#" class="mobile__link">About</a></li>
+                <li class="mobile__item"><a href="#" class="mobile__link">Services and prices</a></li>
+                <li class="mobile__item"><a href="#" class="mobile__link">Barbers</a></li>
+                <li class="mobile__item"><a href="#" class="mobile__link">Contacts</a></li>
+            </ul>
+            <ul class="mobile__lists">
+                <li class="mobile__items"><a href="#" class="mobile__contact">+38 044 111 11 11</a></li>
+                <li class="mobile__items"><a href="#" class="mobile__contact">online-booking </a></li>
+            </ul>
+            <ul class="mobile__socials">
+                <li class="mobile__social">
+                    <p class="mobile__platform">Instagram</p>
+                </li>
+                <li class="mobile__social">
+                    <p class="mobile__platform">Youtube</p>
+                </li>
+            </ul>
+        </div>
+    </div>
     <script type="module" src="./js/menu.js"></script>
+
 </body>
 
 </html>
