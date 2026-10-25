@@ -9,9 +9,15 @@
     }
 
     & .container {
-        flex-direction: row-reverse;
+      flex-direction: column;
         display: flex;
-        gap: 130px;
+      
+
+        @media (min-width: 1200px) {
+            flex-direction: row-reverse;
+            gap: 130px;
+            justify-content: center;
+            }
     }
 
     &__subtitle {
