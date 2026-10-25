@@ -2,7 +2,7 @@
     padding-top: 84px;
     padding-bottom: 84px;
     background-color: #111319;
-    background-image: url("../images/mobile/price1-mobile@1x.webp");
+    background-image:linear-gradient(rgb(25, 28, 38, 0.5)), url("../images/mobile/prices1-tablet@1x.webp") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -10,31 +10,22 @@
 @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url("../images/mobile/price2-mobile@2x.webp");
+        background-image:linear-gradient(rgb(25, 28, 38, 0.5)), url("../images/mobile/prices2-mobile@2x.webp");
     }
 
 
     @media (min-width: 720px) {
-        background-image: url("../images/tablet/prices1-tablet@1x.webp");
+        background-image:linear-gradient(rgb(25, 28, 38, 0.5)), url("../images/tablet/contacts1-tablet@1x.webp");
 
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url("../images/tablet/prices2-tablet@2x.webp");
+                background-image:linear-gradient(rgb(25, 28, 38, 0.5)), url("../images/tablet/contacts2-tablet@2x.webp");
             }
         
     }
 
-          @media (min-width: 1200px) {
-              background-image: url("../images/desktop/prices1-desktop@1x.webp");
-    
-              @media (min-device-pixel-ratio: 2),
-              (min-resolution: 192dpi),
-              (min-resolution: 2dppx) {
-                  background-image: url("../images/desktop/prices2-desktop@2x.webp");
-              }
-    
-          }
+       
 
 
 
